@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78b75a309ff767a4bb3ede0d5c1d2f6f, type: 3}
+  m_Name: MainLanguageDb
+  m_EditorClassIdentifier: 
+  _serializedJsonString: '{"_lang":"en-US","_localizedStrings":{"NO_KEY":"","673cb62e-d60e-4bc6-81f0-06789bcfcae4":"Go
+    on sonny, wheres Grandmas ammo.","0e057048-f321-4151-b0bd-7a726d4522b1":"Grandson!
+    You need to help me, Grandma has lost all here ammo for her revolver. Could you
+    go get me some.","ed251b7e-e634-4ba1-9dd1-d6965c68e7e8":"Thanks Grandson, I can
+    now go and rob that bank."},"_localizedObjects":{}}'
+  _objectReferences: []
+  _lang: en-US

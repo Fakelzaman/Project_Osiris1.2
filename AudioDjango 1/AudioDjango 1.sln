@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AudioDjango 1", "Assembly-CSharp.csproj", "{0EC6AE31-D3ED-D92C-786B-F50469C0980A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AudioDjango 1", "Assembly-CSharp-Editor.csproj", "{75D89AFE-DEC9-5625-EF58-13A6E96C966B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0EC6AE31-D3ED-D92C-786B-F50469C0980A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EC6AE31-D3ED-D92C-786B-F50469C0980A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EC6AE31-D3ED-D92C-786B-F50469C0980A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EC6AE31-D3ED-D92C-786B-F50469C0980A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75D89AFE-DEC9-5625-EF58-13A6E96C966B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75D89AFE-DEC9-5625-EF58-13A6E96C966B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75D89AFE-DEC9-5625-EF58-13A6E96C966B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75D89AFE-DEC9-5625-EF58-13A6E96C966B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal

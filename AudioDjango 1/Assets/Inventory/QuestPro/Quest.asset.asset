@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0763b70f85cfe5f4e93fd923c8b3d84a, type: 3}
+  m_Name: Quest.asset
+  m_EditorClassIdentifier: 
+  _serializedJsonString: '{"ID":1,"name":{"_key":"ccd273fe-83d6-4104-a2ce-fd31db202719"},"description":{"_key":"816d8e8c-a56b-4407-9488-c199ba3eda86"},"icon":null,"autoCompleteWhenTasksAreDone":false,"taskOrder":0,"_tasks":[{"_item":0,"removeItemsOnComplete":true,"key":"Main","description":{"_key":"e8b1b8e0-40fa-4fb0-807e-e0a6734cacea"},"statusMessage":{"_key":"c7684705-2132-4d5c-85ef-11e1b64e2464"},"_icon":null,"_progressCap":6.0,"autoComplete":false,"useTimeLimit":false,"timeLimitInSeconds":300.0,"requirement":0,"giveRewardsOnTaskComplete":false,"rewardGivers":[],"overAchievements":[],"$type":"Devdog.QuestSystemPro.Integration.InventoryPro.InventoryProGatherTask"}],"onActivationRewardGivers":[],"rewardGivers":[{"_name":"A
+    Debug Message.","$type":"MyRewardGiver"}],"maxRepeatTimes":1,"requiresFinishedQuests":[],"conditions":[],"timeHandler":{"failQuestWhenOutOfTime":true,"$type":"Devdog.QuestSystemPro.QuestTimeHandler"}}'
+  _objectReferences:
+  - {fileID: 114352490615711102, guid: 0fa43db423c4e1746b3d6988ed80f42f, type: 2}
+  ID: 1
+  name:
+    _key: ccd273fe-83d6-4104-a2ce-fd31db202719
+  description:
+    _key: 816d8e8c-a56b-4407-9488-c199ba3eda86
+  icon: {fileID: 0}
+  autoCompleteWhenTasksAreDone: 0
+  taskOrder: 0
+  maxRepeatTimes: 1

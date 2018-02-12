@@ -1,0 +1,395 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{75D89AFE-DEC9-5625-EF58-13A6E96C966B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_5_6_1;UNITY_5_6;UNITY_5;UNITY_ANALYTICS;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_RUNTIME_NAVMESH_BUILDING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;INCLUDE_DYNAMIC_GI;INCLUDE_GI;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_SCRIPTING_NEW_CSHARP_COMPILER;ENABLE_VIDEO;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_EVENT_QUEUE;ENABLE_CLUSTERINPUT;ENABLE_VR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_2_0_SUBSET;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE;INVENTORY_PRO</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\AstarPathfindingProject\Editor\AIBaseEditor.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Editor\AnimationLinkEditor.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Editor\AstarPathEditor.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Editor\AstarUpdateChecker.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Editor\AstarUpdateWindow.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Editor\CustomGraphEditorAttribute.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Editor\EditorGUIx.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Editor\GraphEditors\GraphEditor.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Editor\GraphEditors\GridGeneratorEditor.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Editor\GraphEditors\NavMeshGeneratorEditor.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Editor\GraphEditors\PointGeneratorEditor.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Editor\GraphUpdateSceneEditor.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Editor\Misc\AstarEnumFlagDrawer.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Editor\ModifierEditors\RaycastModifierEditor.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Editor\ModifierEditors\SmoothModifierEditor.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Editor\SeekerEditor.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Legacy\Editor\LegacyAIPathEditor.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Legacy\Editor\LegacyEditorHelper.cs" />
+     <Compile Include="Assets\Devdog\General\Editor\GameRules\Attributes\HidesGameRuleAttribute.cs" />
+     <Compile Include="Assets\Devdog\General\Editor\GameRules\DefaultRules\DefaultManagersRule.cs" />
+     <Compile Include="Assets\Devdog\General\Editor\GameRules\DefaultRules\MainCameraRule.cs" />
+     <Compile Include="Assets\Devdog\General\Editor\GameRules\DefaultRules\ManagersRuleBase.cs" />
+     <Compile Include="Assets\Devdog\General\Editor\GameRules\DefaultRules\MissingComponentReferencesRule.cs" />
+     <Compile Include="Assets\Devdog\General\Editor\GameRules\DefaultRules\MonoBehaviourScriptNameRule.cs" />
+     <Compile Include="Assets\Devdog\General\Editor\GameRules\DefaultRules\ReplacedByAttributeRule.cs" />
+     <Compile Include="Assets\Devdog\General\Editor\GameRules\DefaultRules\RequiredAttributeRule.cs" />
+     <Compile Include="Assets\Devdog\General\Editor\GameRules\DefaultRules\UnratedAssetsRule.cs" />
+     <Compile Include="Assets\Devdog\General\Editor\GameRules\GameRuleAction.cs" />
+     <Compile Include="Assets\Devdog\General\Editor\GameRules\GameRuleBase.cs" />
+     <Compile Include="Assets\Devdog\General\Editor\GameRules\GameRuleIssue.cs" />
+     <Compile Include="Assets\Devdog\General\Editor\GameRules\GameRulesWindow.cs" />
+     <Compile Include="Assets\Devdog\General\Editor\GameRules\Interfaces\IGameRule.cs" />
+     <Compile Include="Assets\Devdog\General\Editor\ModuleList.cs" />
+     <Compile Include="Assets\Devdog\General\Editor\ProductLookup.cs" />
+     <Compile Include="Assets\Devdog\General\Editor\ProductRatingUtility.cs" />
+     <Compile Include="Assets\Devdog\General\Editor\RateAssetEditorWindow.cs" />
+     <Compile Include="Assets\Devdog\General\Integrations\InventoryPro\Editor\InventoryProInventoryItemBaseDrawer.cs" />
+     <Compile Include="Assets\Devdog\General\Localization\Editor\ChangeKeyEditorWindow.cs" />
+     <Compile Include="Assets\Devdog\General\Localization\Editor\Drawers\LocalizedAudioClipDrawer.cs" />
+     <Compile Include="Assets\Devdog\General\Localization\Editor\Drawers\LocalizedObjectDrawerBase.cs" />
+     <Compile Include="Assets\Devdog\General\Localization\Editor\Drawers\LocalizedSpriteDrawer.cs" />
+     <Compile Include="Assets\Devdog\General\Localization\Editor\Drawers\LocalizedStringDrawer.cs" />
+     <Compile Include="Assets\Devdog\General\Localization\Editor\Drawers\LocalizedTextureEditor.cs" />
+     <Compile Include="Assets\Devdog\General\Localization\Editor\Drawers\LocalizedUnityEngineObjectDrawer.cs" />
+     <Compile Include="Assets\Devdog\General\Localization\Editor\Editors\LocalizedAudioClipEditor.cs" />
+     <Compile Include="Assets\Devdog\General\Localization\Editor\Editors\LocalizedObjectEditorBase.cs" />
+     <Compile Include="Assets\Devdog\General\Localization\Editor\Editors\LocalizedSpriteEditor.cs" />
+     <Compile Include="Assets\Devdog\General\Localization\Editor\Editors\LocalizedStringEditor.cs" />
+     <Compile Include="Assets\Devdog\General\Localization\Editor\Editors\LocalizedTextureEditor.cs" />
+     <Compile Include="Assets\Devdog\General\Localization\Editor\Editors\LocalizedUnityEngineObjectEditor.cs" />
+     <Compile Include="Assets\Devdog\General\Localization\Editor\LocalizationEditorUtility.cs" />
+     <Compile Include="Assets\Devdog\General\Localization\Editor\LocalizationEditorWindow.cs" />
+     <Compile Include="Assets\Devdog\General\Managers\Editor\GettingStartedEditorBase.cs" />
+     <Compile Include="Assets\Devdog\General\Managers\Editor\IntegrationHelperEditorBase.cs" />
+     <Compile Include="Assets\Devdog\General\Managers\Editor\LocalizationManagerEditor.cs" />
+     <Compile Include="Assets\Devdog\General\Managers\Editor\NewsletterEditorUtility.cs" />
+     <Compile Include="Assets\Devdog\General\Serialization\Attributes\Editor\ForceCustomObjectPickerAttributeEditor.cs" />
+     <Compile Include="Assets\Devdog\General\Serialization\Attributes\Editor\InspectorReadOnlyAttributeEditor.cs" />
+     <Compile Include="Assets\Devdog\General\Serialization\Attributes\Editor\RequiredAttributeEditor.cs" />
+     <Compile Include="Assets\Devdog\General\Serialization\Editor\AotHelpers.cs" />
+     <Compile Include="Assets\Devdog\General\Serialization\Editor\BetterMonoBehaviourEditor.cs" />
+     <Compile Include="Assets\Devdog\General\Serialization\Editor\BetterScriptableObjectEditor.cs" />
+     <Compile Include="Assets\Devdog\General\Serialization\Editor\BetterUnityEditorBase.cs" />
+     <Compile Include="Assets\Devdog\General\Serialization\Editor\CustomDrawers\AssetDrawer.cs" />
+     <Compile Include="Assets\Devdog\General\Triggers\Editor\TriggerEditor.cs" />
+     <Compile Include="Assets\Devdog\General\Triggers\Editor\TriggerRangeHandlerEditor.cs" />
+     <Compile Include="Assets\Devdog\General\UI\Editor\Attributes\CustomDrawerAttribute.cs" />
+     <Compile Include="Assets\Devdog\General\UI\Editor\Attributes\CustomObjectPickerAttribute.cs" />
+     <Compile Include="Assets\Devdog\General\UI\Editor\CrudEditors\EditorCrudBase.cs" />
+     <Compile Include="Assets\Devdog\General\UI\Editor\CrudEditors\EmptyEditor.cs" />
+     <Compile Include="Assets\Devdog\General\UI\Editor\CrudEditors\IEditorCrud.cs" />
+     <Compile Include="Assets\Devdog\General\UI\Editor\Helpers\ColorBlock.cs" />
+     <Compile Include="Assets\Devdog\General\UI\Editor\Helpers\FoldoutBlock.cs" />
+     <Compile Include="Assets\Devdog\General\UI\Editor\Helpers\FoldoutBlockUtility.cs" />
+     <Compile Include="Assets\Devdog\General\UI\Editor\Helpers\GUIDisabledBlock.cs" />
+     <Compile Include="Assets\Devdog\General\UI\Editor\Helpers\GUIMatrixBlock.cs" />
+     <Compile Include="Assets\Devdog\General\UI\Editor\Helpers\GroupBlock.cs" />
+     <Compile Include="Assets\Devdog\General\UI\Editor\Helpers\IndentBlock.cs" />
+     <Compile Include="Assets\Devdog\General\UI\Editor\Helpers\ScrollableBlock.cs" />
+     <Compile Include="Assets\Devdog\General\UI\Editor\Helpers\VerticalLayoutBlock.cs" />
+     <Compile Include="Assets\Devdog\General\UI\Editor\Other\BetterEditorWindow.cs" />
+     <Compile Include="Assets\Devdog\General\UI\Editor\Other\DerivedTypeInformation.cs" />
+     <Compile Include="Assets\Devdog\General\UI\Editor\Other\EditorStyles.cs" />
+     <Compile Include="Assets\Devdog\General\UI\Editor\Other\EditorUtility.cs" />
+     <Compile Include="Assets\Devdog\General\UI\Editor\Pickers\GenericObjectPickerBaseEditor.cs" />
+     <Compile Include="Assets\Devdog\General\UI\Editor\Pickers\ObjectPickerBaseEditor.cs" />
+     <Compile Include="Assets\Devdog\General\UI\Editor\Pickers\ObjectPickerUtility.cs" />
+     <Compile Include="Assets\Devdog\General\UI\Editor\Pickers\ScriptPickerEditor.cs" />
+     <Compile Include="Assets\Devdog\General\UI\Editor\Pickers\ScriptableObjectPickerEditor.cs" />
+     <Compile Include="Assets\Devdog\General\UI\Editor\Pickers\UnityEngineObjectPickerEditor.cs" />
+     <Compile Include="Assets\Devdog\General\UI\Editor\QuestWindowUIFieldEditor.cs" />
+     <Compile Include="Assets\Devdog\General\UI\Editor\ReflectionDrawerStyles.cs" />
+     <Compile Include="Assets\Devdog\General\UI\Editor\ReflectionDrawerUtility.cs" />
+     <Compile Include="Assets\Devdog\General\UI\Editor\ReflectionDrawers\AnimationCurveDrawer.cs" />
+     <Compile Include="Assets\Devdog\General\UI\Editor\ReflectionDrawers\ArrayDrawer.cs" />
+     <Compile Include="Assets\Devdog\General\UI\Editor\ReflectionDrawers\BoolDrawer.cs" />
+     <Compile Include="Assets\Devdog\General\UI\Editor\ReflectionDrawers\ChildrenValueDrawerBase.cs" />
+     <Compile Include="Assets\Devdog\General\UI\Editor\ReflectionDrawers\ClassDrawer.cs" />
+     <Compile Include="Assets\Devdog\General\UI\Editor\ReflectionDrawers\ColorDrawer.cs" />
+     <Compile Include="Assets\Devdog\General\UI\Editor\ReflectionDrawers\DictionaryDrawer.cs" />
+     <Compile Include="Assets\Devdog\General\UI\Editor\ReflectionDrawers\DrawerBase.cs" />
+     <Compile Include="Assets\Devdog\General\UI\Editor\ReflectionDrawers\EnumDrawer.cs" />
+     <Compile Include="Assets\Devdog\General\UI\Editor\ReflectionDrawers\FloatDrawer.cs" />
+     <Compile Include="Assets\Devdog\General\UI\Editor\ReflectionDrawers\IntDrawer.cs" />
+     <Compile Include="Assets\Devdog\General\UI\Editor\ReflectionDrawers\InterfaceDrawer.cs" />
+     <Compile Include="Assets\Devdog\General\UI\Editor\ReflectionDrawers\Interfaces\IChildrenDrawer.cs" />
+     <Compile Include="Assets\Devdog\General\UI\Editor\ReflectionDrawers\LayermaskDrawer.cs" />
+     <Compile Include="Assets\Devdog\General\UI\Editor\ReflectionDrawers\QuaternionDrawer.cs" />
+     <Compile Include="Assets\Devdog\General\UI\Editor\ReflectionDrawers\SimpleValueDrawer.cs" />
+     <Compile Include="Assets\Devdog\General\UI\Editor\ReflectionDrawers\StringDrawer.cs" />
+     <Compile Include="Assets\Devdog\General\UI\Editor\ReflectionDrawers\UintDrawer.cs" />
+     <Compile Include="Assets\Devdog\General\UI\Editor\ReflectionDrawers\UnityObjectDrawer.cs" />
+     <Compile Include="Assets\Devdog\General\UI\Editor\ReflectionDrawers\ValueTypeDrawer.cs" />
+     <Compile Include="Assets\Devdog\General\UI\Editor\ReflectionDrawers\Vec2Drawer.cs" />
+     <Compile Include="Assets\Devdog\General\UI\Editor\ReflectionDrawers\Vec3Drawer.cs" />
+     <Compile Include="Assets\Devdog\General\UI\Editor\ReflectionDrawers\Vec4Drawer.cs" />
+     <Compile Include="Assets\Devdog\General\UI\Windows\Editor\UIWindowEditor.cs" />
+     <Compile Include="Assets\Devdog\General\Utilities\Editor\EditorReflectionUtility.cs" />
+     <Compile Include="Assets\Devdog\General\Utilities\Editor\ScriptableObjectUtility.cs" />
+     <Compile Include="Assets\Devdog\InventoryPro\Scripts\Collections\Editor\ItemCollectionBaseEditor.cs" />
+     <Compile Include="Assets\Devdog\InventoryPro\Scripts\Currency\Editor\CurrencyDecoratorEditor.cs" />
+     <Compile Include="Assets\Devdog\InventoryPro\Scripts\Currency\Editor\CurrencyUIEditor.cs" />
+     <Compile Include="Assets\Devdog\InventoryPro\Scripts\Editor\GameRules\DeprecatedItemDatabase.cs" />
+     <Compile Include="Assets\Devdog\InventoryPro\Scripts\Editor\GameRules\DeprecatedItemPrefabRule.cs" />
+     <Compile Include="Assets\Devdog\InventoryPro\Scripts\Editor\GameRules\DeprecatedItemsRule.cs" />
+     <Compile Include="Assets\Devdog\InventoryPro\Scripts\Editor\GameRules\InventoryItemBaseUsedRule.cs" />
+     <Compile Include="Assets\Devdog\InventoryPro\Scripts\Editor\GameRules\InventoryPlayerRule.cs" />
+     <Compile Include="Assets\Devdog\InventoryPro\Scripts\Editor\GameRules\InventoryProManagersRule.cs" />
+     <Compile Include="Assets\Devdog\InventoryPro\Scripts\Integration\NodeCanvas\Editor\CustomInventoryItemBaseDrawer.cs" />
+     <Compile Include="Assets\Devdog\InventoryPro\Scripts\Integration\PlayMaker\Other\Editor\InventoryItemBasePlaymakerWrapperEditor.cs" />
+     <Compile Include="Assets\Devdog\InventoryPro\Scripts\Integration\UFPS\Editor\ConsumableUFPSInventoryItemEditor.cs" />
+     <Compile Include="Assets\Devdog\InventoryPro\Scripts\Integration\UFPS\Editor\EquippableUFPSInventoryItemEditor.cs" />
+     <Compile Include="Assets\Devdog\InventoryPro\Scripts\Integration\UFPS\Editor\UnitTypeUFPSInventoryItemEditor.cs" />
+     <Compile Include="Assets\Devdog\InventoryPro\Scripts\Integration\UMA\Items\Editor\UMAEquippableInventoryItemEditor.cs" />
+     <Compile Include="Assets\Devdog\InventoryPro\Scripts\Integration\plyGame\Diaq\Editor\InventoryDiaQRewardInfo.cs" />
+     <Compile Include="Assets\Devdog\InventoryPro\Scripts\Integration\plyGame\ItemTypes\Editor\plyGameConsumableInventoryItemEditor.cs" />
+     <Compile Include="Assets\Devdog\InventoryPro\Scripts\Integration\plyGame\ItemTypes\Editor\plyGameEquippableInventoryItemEditor.cs" />
+     <Compile Include="Assets\Devdog\InventoryPro\Scripts\Integration\plyGame\ItemTypes\Editor\plyGameSkillInventoryItemEditor.cs" />
+     <Compile Include="Assets\Devdog\InventoryPro\Scripts\Integration\plyGame\MainEditors\Editor\plyStatsEditor.cs" />
+     <Compile Include="Assets\Devdog\InventoryPro\Scripts\Integration\plyGame\ObjectPickers\Editor\InventoryPlySkillPrefabPickerBase.cs" />
+     <Compile Include="Assets\Devdog\InventoryPro\Scripts\Integration\plyGame\plyBlox\Fields\Editor\InventoryItemBaseFieldData_Handler.cs" />
+     <Compile Include="Assets\Devdog\InventoryPro\Scripts\Items\Editor\CurrencyInventoryItem.cs" />
+     <Compile Include="Assets\Devdog\InventoryPro\Scripts\Items\Editor\EquippableInventoryItemEditor.cs" />
+     <Compile Include="Assets\Devdog\InventoryPro\Scripts\Items\Editor\InventoryItemBaseEditor.cs" />
+     <Compile Include="Assets\Devdog\InventoryPro\Scripts\Items\Editor\ItemAmountRowEditor.cs" />
+     <Compile Include="Assets\Devdog\InventoryPro\Scripts\Items\Editor\ItemPouchInventoryItemEditor.cs" />
+     <Compile Include="Assets\Devdog\InventoryPro\Scripts\Items\Editor\StatRequirementEditor.cs" />
+     <Compile Include="Assets\Devdog\InventoryPro\Scripts\Managers\Editor\Databases\ItemDatabaseEditor.cs" />
+     <Compile Include="Assets\Devdog\InventoryPro\Scripts\Managers\Editor\Databases\LangDatabaseEditor.cs" />
+     <Compile Include="Assets\Devdog\InventoryPro\Scripts\Managers\Editor\DocumentationLinkEditor.cs" />
+     <Compile Include="Assets\Devdog\InventoryPro\Scripts\Managers\Editor\EasySetupEditor.cs" />
+     <Compile Include="Assets\Devdog\InventoryPro\Scripts\Managers\Editor\GettingStartedEditor.cs" />
+     <Compile Include="Assets\Devdog\InventoryPro\Scripts\Managers\Editor\IntegrationHelperEditor.cs" />
+     <Compile Include="Assets\Devdog\InventoryPro\Scripts\Managers\Editor\InventoryEditorCrudBase.cs" />
+     <Compile Include="Assets\Devdog\InventoryPro\Scripts\Managers\Editor\InventoryEditors\Crafting\CraftingBlueprintEditor.cs" />
+     <Compile Include="Assets\Devdog\InventoryPro\Scripts\Managers\Editor\InventoryEditors\Crafting\CraftingCategoryEditor.cs" />
+     <Compile Include="Assets\Devdog\InventoryPro\Scripts\Managers\Editor\InventoryEditors\Crafting\CraftingEmptyEditor.cs" />
+     <Compile Include="Assets\Devdog\InventoryPro\Scripts\Managers\Editor\InventoryEditors\Crafting\Pickers\CraftingBlueprintObjectPickerEditor.cs" />
+     <Compile Include="Assets\Devdog\InventoryPro\Scripts\Managers\Editor\InventoryEditors\Crafting\Pickers\CraftingCategoryObjectPickerEditor.cs" />
+     <Compile Include="Assets\Devdog\InventoryPro\Scripts\Managers\Editor\InventoryEditors\Currency\CurrencyEditor.cs" />
+     <Compile Include="Assets\Devdog\InventoryPro\Scripts\Managers\Editor\InventoryEditors\Currency\Pickers\CurrencyObjectPickerEditor.cs" />
+     <Compile Include="Assets\Devdog\InventoryPro\Scripts\Managers\Editor\InventoryEditors\EmptyEditor.cs" />
+     <Compile Include="Assets\Devdog\InventoryPro\Scripts\Managers\Editor\InventoryEditors\Equipment\EquipmentTypeEditor.cs" />
+     <Compile Include="Assets\Devdog\InventoryPro\Scripts\Managers\Editor\InventoryEditors\Equipment\Pickers\EquipmentTypeObjectPickerEditor.cs" />
+     <Compile Include="Assets\Devdog\InventoryPro\Scripts\Managers\Editor\InventoryEditors\InventoryProObjectPickerBase.cs" />
+     <Compile Include="Assets\Devdog\InventoryPro\Scripts\Managers\Editor\InventoryEditors\Items\ItemCategoryEditor.cs" />
+     <Compile Include="Assets\Devdog\InventoryPro\Scripts\Managers\Editor\InventoryEditors\Items\ItemEditor.cs" />
+     <Compile Include="Assets\Devdog\InventoryPro\Scripts\Managers\Editor\InventoryEditors\Items\ItemRarityEditor.cs" />
+     <Compile Include="Assets\Devdog\InventoryPro\Scripts\Managers\Editor\InventoryEditors\Items\ItemStatEditor.cs" />
+     <Compile Include="Assets\Devdog\InventoryPro\Scripts\Managers\Editor\InventoryEditors\Items\Pickers\InventoryItemObjectPickerEditor.cs" />
+     <Compile Include="Assets\Devdog\InventoryPro\Scripts\Managers\Editor\InventoryEditors\Items\Pickers\ItemCategoryObjectPickerEditor.cs" />
+     <Compile Include="Assets\Devdog\InventoryPro\Scripts\Managers\Editor\InventoryEditors\Items\Pickers\ItemPropertyObjectPickerEditor.cs" />
+     <Compile Include="Assets\Devdog\InventoryPro\Scripts\Managers\Editor\InventoryEditors\Items\Pickers\ItemRarityObjectPickerEditor.cs" />
+     <Compile Include="Assets\Devdog\InventoryPro\Scripts\Managers\Editor\InventoryEditors\Items\StatDecoratorEditor.cs" />
+     <Compile Include="Assets\Devdog\InventoryPro\Scripts\Managers\Editor\InventoryEditors\Items\Windows\CreateNewItemEditor.cs" />
+     <Compile Include="Assets\Devdog\InventoryPro\Scripts\Managers\Editor\InventoryEditors\Items\Windows\ReplaceWithDialog.cs" />
+     <Compile Include="Assets\Devdog\InventoryPro\Scripts\Managers\Editor\InventoryEditors\Language\LanguageEditor.cs" />
+     <Compile Include="Assets\Devdog\InventoryPro\Scripts\Managers\Editor\InventoryEditors\Settings\SettingsEditor.cs" />
+     <Compile Include="Assets\Devdog\InventoryPro\Scripts\Managers\Editor\InventoryMainEditor.cs" />
+     <Compile Include="Assets\Devdog\InventoryPro\Scripts\Managers\Editor\InventoryManagerEditor.cs" />
+     <Compile Include="Assets\Devdog\InventoryPro\Scripts\Managers\Editor\InventoryScriptableObjectUtility.cs" />
+     <Compile Include="Assets\Devdog\InventoryPro\Scripts\Managers\Editor\ScriptableObjectEditorCrud.cs" />
+     <Compile Include="Assets\Devdog\InventoryPro\Scripts\Modules\Character\Editor\InventoryEquippableFieldEditor.cs" />
+     <Compile Include="Assets\Devdog\InventoryPro\Scripts\Modules\Crafting\Editor\CraftingTriggererEditor.cs" />
+     <Compile Include="Assets\Devdog\InventoryPro\Scripts\Modules\Crafting\Editor\CraftingWindowLayoutUIEditor.cs" />
+     <Compile Include="Assets\Devdog\InventoryPro\Scripts\Modules\Crafting\Editor\CraftingWindowStandardUIEditor.cs" />
+     <Compile Include="Assets\Devdog\InventoryPro\Scripts\Modules\ItemFilters\Editor\InventoryItemFiltersEditor.cs" />
+     <Compile Include="Assets\Devdog\InventoryPro\Scripts\Modules\ItemFilters\Editor\ItemFilterEditor.cs" />
+     <Compile Include="Assets\Devdog\InventoryPro\Scripts\Modules\ItemGenerators\Editor\InventoryItemContainerGeneratorEditor.cs" />
+     <Compile Include="Assets\Devdog\InventoryPro\Scripts\Modules\Player\Editor\InventoryPlayerBaseEditor.cs" />
+     <Compile Include="Assets\Devdog\InventoryPro\Scripts\Modules\Player\Editor\InventoryPlayerEditor.cs" />
+     <Compile Include="Assets\Devdog\InventoryPro\Scripts\Modules\Player\Editor\InventoryPlayerSpawnerEditor.cs" />
+     <Compile Include="Assets\Devdog\InventoryPro\Scripts\Modules\Serialization\Editor\PlayerPrefsCollectionSaverLoaderEditor.cs" />
+     <Compile Include="Assets\Devdog\InventoryPro\Scripts\Modules\Triggers\Editor\LootableObjectEditor.cs" />
+     <Compile Include="Assets\Devdog\InventoryPro\Scripts\Modules\Triggers\Editor\VendorTriggerEditor.cs" />
+     <Compile Include="Assets\Devdog\InventoryPro\Scripts\Other\Editor\Helpers\CustomOverrideProperty.cs" />
+     <Compile Include="Assets\Devdog\InventoryPro\Scripts\Other\Editor\InventoryEditorBase.cs" />
+     <Compile Include="Assets\Devdog\InventoryPro\Scripts\Other\Editor\Utilities\InventoryEditorUtility.cs" />
+     <Compile Include="Assets\Devdog\InventoryPro\Scripts\UI\SlotUI\Editor\InventoryUIItemWrapperEditor.cs" />
+     <Compile Include="Assets\Devdog\QuestSystemPro\Scripts\Achievements\Editor\AchievementPropertyDrawer.cs" />
+     <Compile Include="Assets\Devdog\QuestSystemPro\Scripts\Dialogue\Editor\Attributes\CustomNodeEditorAttribute.cs" />
+     <Compile Include="Assets\Devdog\QuestSystemPro\Scripts\Dialogue\Editor\CustomDrawers\VariableRefDrawer.cs" />
+     <Compile Include="Assets\Devdog\QuestSystemPro\Scripts\Dialogue\Editor\DialogueDrawer.cs" />
+     <Compile Include="Assets\Devdog\QuestSystemPro\Scripts\Dialogue\Editor\DialogueEditorUtility.cs" />
+     <Compile Include="Assets\Devdog\QuestSystemPro\Scripts\Dialogue\Editor\DialogueEditorWindow.cs" />
+     <Compile Include="Assets\Devdog\QuestSystemPro\Scripts\Dialogue\Editor\DialogueNodesSidebarEditor.cs" />
+     <Compile Include="Assets\Devdog\QuestSystemPro\Scripts\Dialogue\Editor\DialogueOwnerEditor.cs" />
+     <Compile Include="Assets\Devdog\QuestSystemPro\Scripts\Dialogue\Editor\DialogueReflectionUtility.cs" />
+     <Compile Include="Assets\Devdog\QuestSystemPro\Scripts\Dialogue\Editor\NodeConditions\FakeEdgeCondition.cs" />
+     <Compile Include="Assets\Devdog\QuestSystemPro\Scripts\Dialogue\Editor\Nodes\DebugNodeVisualType.cs" />
+     <Compile Include="Assets\Devdog\QuestSystemPro\Scripts\Dialogue\Editor\Nodes\DefaultNodeEditor.cs" />
+     <Compile Include="Assets\Devdog\QuestSystemPro\Scripts\Dialogue\Editor\Nodes\EdgeConditionSummary.cs" />
+     <Compile Include="Assets\Devdog\QuestSystemPro\Scripts\Dialogue\Editor\Nodes\EdgeConnector.cs" />
+     <Compile Include="Assets\Devdog\QuestSystemPro\Scripts\Dialogue\Editor\Nodes\EntryNodeEditor.cs" />
+     <Compile Include="Assets\Devdog\QuestSystemPro\Scripts\Dialogue\Editor\Nodes\NodeEditorBase.cs" />
+     <Compile Include="Assets\Devdog\QuestSystemPro\Scripts\Dialogue\Editor\Nodes\NodeStyleElement.cs" />
+     <Compile Include="Assets\Devdog\QuestSystemPro\Scripts\Dialogue\Editor\Nodes\PlayerDecisionNodeEditor.cs" />
+     <Compile Include="Assets\Devdog\QuestSystemPro\Scripts\Dialogue\Editor\Nodes\PlayerInputNodeEditor.cs" />
+     <Compile Include="Assets\Devdog\QuestSystemPro\Scripts\Dialogue\Editor\Nodes\PlayerQuestStatusChoiceNodeEditor.cs" />
+     <Compile Include="Assets\Devdog\QuestSystemPro\Scripts\Dialogue\Editor\Sidebar\DialogueEditorSidebarBase.cs" />
+     <Compile Include="Assets\Devdog\QuestSystemPro\Scripts\Dialogue\Editor\Sidebar\DialogueEditorSidebarProperties.cs" />
+     <Compile Include="Assets\Devdog\QuestSystemPro\Scripts\Dialogue\Editor\Sidebar\DialogueEditorSidebarVariables.cs" />
+     <Compile Include="Assets\Devdog\QuestSystemPro\Scripts\Dialogue\Other\Editor\DialogueCameraEditor.cs" />
+     <Compile Include="Assets\Devdog\QuestSystemPro\Scripts\Editor\GameRules\DialogueNodesRule.cs" />
+     <Compile Include="Assets\Devdog\QuestSystemPro\Scripts\Editor\GameRules\QuestGiverRule.cs" />
+     <Compile Include="Assets\Devdog\QuestSystemPro\Scripts\Editor\GameRules\QuestSystemPlayerRule.cs" />
+     <Compile Include="Assets\Devdog\QuestSystemPro\Scripts\Integrations\InventoryPro\Editor\ItemAmountRowEditor.cs" />
+     <Compile Include="Assets\Devdog\QuestSystemPro\Scripts\Managers\Editor\DocumentationLinkEditor.cs" />
+     <Compile Include="Assets\Devdog\QuestSystemPro\Scripts\Managers\Editor\GettingStartedEditor.cs" />
+     <Compile Include="Assets\Devdog\QuestSystemPro\Scripts\Managers\Editor\IntegrationHelperEditor.cs" />
+     <Compile Include="Assets\Devdog\QuestSystemPro\Scripts\Managers\Editor\MainEditor.cs" />
+     <Compile Include="Assets\Devdog\QuestSystemPro\Scripts\Managers\Editor\QuestManagerEditor.cs" />
+     <Compile Include="Assets\Devdog\QuestSystemPro\Scripts\Managers\Editor\Quests\AchievementsEditor.cs" />
+     <Compile Include="Assets\Devdog\QuestSystemPro\Scripts\Managers\Editor\Quests\QuestsEditor.cs" />
+     <Compile Include="Assets\Devdog\QuestSystemPro\Scripts\Managers\Editor\Settings\SettingsEditor.cs" />
+     <Compile Include="Assets\Devdog\QuestSystemPro\Scripts\Quests\Editor\QuestDecoratorUtility.cs" />
+     <Compile Include="Assets\Devdog\QuestSystemPro\Scripts\Quests\Editor\QuestDrawer.cs" />
+     <Compile Include="Assets\Devdog\QuestSystemPro\Scripts\Quests\Editor\QuestPickerEditorWindow.cs" />
+     <Compile Include="Assets\Devdog\QuestSystemPro\Scripts\Quests\Editor\QuestPropertyDrawer.cs" />
+     <Compile Include="Assets\Devdog\QuestSystemPro\Scripts\Quests\Editor\QuestPropertyDrawerBase.cs" />
+     <Compile Include="Assets\Devdog\QuestSystemPro\Scripts\Quests\ObjectAffectors\Editor\QuestStatusDecoratorEditor.cs" />
+     <Compile Include="Assets\Devdog\QuestSystemPro\Scripts\Quests\ProgressAffectors\Editor\QuestProgressDecoratorEditor.cs" />
+     <Compile Include="Assets\Devdog\QuestSystemPro\Scripts\Quests\QuestGivers\Editor\QuestGiverEditor.cs" />
+     <Compile Include="Assets\Devdog\QuestSystemPro\Scripts\Spawner\Distribution\Editor\PerlinNoiseSpawnerVolumeEditor.cs" />
+     <Compile Include="Assets\Devdog\QuestSystemPro\Scripts\Spawner\Distribution\Editor\WeightedTextureSpawnerVolumeEditor.cs" />
+     <Compile Include="Assets\Devdog\QuestSystemPro\Scripts\Spawner\Editor\SpawnerBaseEditor.cs" />
+     <Compile Include="Assets\Devdog\QuestSystemPro\Scripts\Waypoint\Editor\WaypointEditor.cs" />
+     <Compile Include="Assets\Devdog\QuestSystemPro\Scripts\Waypoint\Editor\WaypointGroupEditor.cs" />
+     <Compile Include="Assets\Tile Editor\Scripts\Editor\TileMapInspector.cs" />
+     <Compile Include="Assets\Tile Editor\Scripts\Editor\TileMapWizard.cs" />
+     <Compile Include="Assets\Tile Editor\Scripts\Editor\TileSetNameWizard.cs" />
+     <None Include="Assets\Devdog\QuestSystemPro\Scripts\Spawner\Shaders\WeightedTexturePreview.shader" />
+     <None Include="Assets\AstarPathfindingProject\Editor\EditorAssets\Materials\Navmesh.cginc" />
+     <None Include="Assets\Devdog\InventoryPro\Scripts\Diagrams\ClassDiagram1.cd" />
+     <None Include="Assets\AstarPathfindingProject\Editor\EditorAssets\Materials\Navmesh.shader" />
+     <None Include="Assets\Devdog\InventoryPro\Config.xml" />
+     <None Include="Assets\AstarPathfindingProject\Plugins\DotNetZip\DotNetZipLicense.txt" />
+     <None Include="Assets\Devdog\InventoryPro\README.txt" />
+     <None Include="Assets\AstarPathfindingProject\ExampleScenes\Materials\DiffuseAlwaysVisible.shader" />
+     <None Include="Assets\AstarPathfindingProject\Plugins\dependencies.txt" />
+     <None Include="Assets\AstarPathfindingProject\ExampleScenes\_Example Scenes.txt" />
+     <None Include="Assets\Devdog\QuestSystemPro\readme.txt" />
+     <None Include="Assets\AstarPathfindingProject\Readme_upgrading.txt" />
+     <None Include="Assets\Devdog\InventoryPro\Scripts\Diagrams\InventorySystem.cd" />
+     <None Include="Assets\AstarPathfindingProject\ExampleScenes\Materials\Projector Light.shader" />
+     <None Include="Assets\AstarPathfindingProject\Readme.txt" />
+     <None Include="Assets\Devdog\General.xml" />
+     <None Include="Assets\Devdog\InventoryPro\Scripts\Diagrams\UIItemWrappers.cd" />
+     <None Include="Assets\Devdog\InventoryPro\Standard Assets\Cameras\CameraGuidelines.txt" />
+     <None Include="Assets\AstarPathfindingProject\Editor\EditorAssets\Materials\NavmeshOutline.shader" />
+     <None Include="Assets\AstarPathfindingProject\link.xml" />
+     <None Include="Assets\Devdog\InventoryPro\Demos\Assets\UI\Shaders\SpriteShader.shader" />
+ <Reference Include="UnityEditor.Advertisements">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/Editor/UnityEditor.Advertisements.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UI">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.UI">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Networking">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/Editor/UnityEditor.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.TestRunner">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/Editor/UnityEditor.TestRunner.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TestRunner">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
+ </Reference>
+ <Reference Include="nunit.framework">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/nunit.framework.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.TreeEditor">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TreeEditor/Editor/UnityEditor.TreeEditor.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Analytics">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Analytics">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/Editor/UnityEditor.Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.HoloLens">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/Editor/UnityEditor.HoloLens.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.HoloLens">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Purchasing">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityPurchasing/Editor/UnityEditor.Purchasing.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.VR">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/Editor/UnityEditor.VR.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.VR">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Graphs">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.WindowsStandalone.Extensions">
+ <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="Pathfinding.Ionic.Zip.Reduced">
+ <HintPath>C:/Users/The Candy Kong/Desktop/AudioJangle/AudioDjango 1/Assets/AstarPathfindingProject/Plugins/DotNetZip/Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
+ </Reference>
+ <Reference Include="Devdog.Internal">
+ <HintPath>C:/Users/The Candy Kong/Desktop/AudioJangle/AudioDjango 1/Assets/Devdog/Internal/Devdog.Internal.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp.csproj">
+      <Project>{0EC6AE31-D3ED-D92C-786B-F50469C0980A}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
